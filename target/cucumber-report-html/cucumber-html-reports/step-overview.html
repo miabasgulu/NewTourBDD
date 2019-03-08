@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Html Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>CucumberNewtourProject - Test</td>
+                          <td>1</td>
+                        <td>31 Oct 2018, 19:46</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">BookAFlightTest.i_click_on_secure_purchase_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="1396758814">1s 396ms</td>
+                <td class="duration" data-value="1396758814">1s 396ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_billing_City()</td>
+                <td>1</td>
+                <td class="duration" data-value="217166672">217ms</td>
+                <td class="duration" data-value="217166672">217ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_billing_address()</td>
+                <td>1</td>
+                <td class="duration" data-value="686392892">686ms</td>
+                <td class="duration" data-value="686392892">686ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_billing_state()</td>
+                <td>1</td>
+                <td class="duration" data-value="174696053">174ms</td>
+                <td class="duration" data-value="174696053">174ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_billing_zipp_code()</td>
+                <td>1</td>
+                <td class="duration" data-value="219642397">219ms</td>
+                <td class="duration" data-value="219642397">219ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_credit_card_first_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="133576662">133ms</td>
+                <td class="duration" data-value="133576662">133ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_credit_card_last_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="122868738">122ms</td>
+                <td class="duration" data-value="122868738">122ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_credit_card_middle_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="106533396">106ms</td>
+                <td class="duration" data-value="106533396">106ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_credit_card_number()</td>
+                <td>1</td>
+                <td class="duration" data-value="204270405">204ms</td>
+                <td class="duration" data-value="204270405">204ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_delivery_City()</td>
+                <td>1</td>
+                <td class="duration" data-value="242139723">242ms</td>
+                <td class="duration" data-value="242139723">242ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_delivery_address()</td>
+                <td>1</td>
+                <td class="duration" data-value="450900002">450ms</td>
+                <td class="duration" data-value="450900002">450ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_delivery_state()</td>
+                <td>1</td>
+                <td class="duration" data-value="183323889">183ms</td>
+                <td class="duration" data-value="183323889">183ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_delivery_zipp_code()</td>
+                <td>1</td>
+                <td class="duration" data-value="226788183">226ms</td>
+                <td class="duration" data-value="226788183">226ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_first_name_for_each_passenger()</td>
+                <td>1</td>
+                <td class="duration" data-value="735478962">735ms</td>
+                <td class="duration" data-value="735478962">735ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_enter_last_name_for_each_passenger()</td>
+                <td>1</td>
+                <td class="duration" data-value="494732428">494ms</td>
+                <td class="duration" data-value="494732428">494ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_select_credit_card_type()</td>
+                <td>1</td>
+                <td class="duration" data-value="138019286">138ms</td>
+                <td class="duration" data-value="138019286">138ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_select_expiration_month()</td>
+                <td>1</td>
+                <td class="duration" data-value="116594621">116ms</td>
+                <td class="duration" data-value="116594621">116ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_select_expiration_year()</td>
+                <td>1</td>
+                <td class="duration" data-value="125955196">125ms</td>
+                <td class="duration" data-value="125955196">125ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_select_meal_type_for_each_passenger()</td>
+                <td>1</td>
+                <td class="duration" data-value="550837695">550ms</td>
+                <td class="duration" data-value="550837695">550ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_slect_billing_country_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="135353148">135ms</td>
+                <td class="duration" data-value="135353148">135ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">BookAFlightTest.i_slect_delivery_country_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="126506688">126ms</td>
+                <td class="duration" data-value="126506688">126ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_click_on_submit_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="430823746">430ms</td>
+                <td class="duration" data-value="430823746">430ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_click_profile_link()</td>
+                <td>2</td>
+                <td class="duration" data-value="1123879339">1s 123ms</td>
+                <td class="duration" data-value="561939669">561ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_eneter_first_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="278939201">278ms</td>
+                <td class="duration" data-value="278939201">278ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_enter_State_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="61312716">061ms</td>
+                <td class="duration" data-value="61312716">061ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_enter_city_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="130095274">130ms</td>
+                <td class="duration" data-value="130095274">130ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_enter_email_address()</td>
+                <td>1</td>
+                <td class="duration" data-value="202927992">202ms</td>
+                <td class="duration" data-value="202927992">202ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_enter_last_name()</td>
+                <td>1</td>
+                <td class="duration" data-value="119599977">119ms</td>
+                <td class="duration" data-value="119599977">119ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_enter_mailing_address()</td>
+                <td>1</td>
+                <td class="duration" data-value="453057666">453ms</td>
+                <td class="duration" data-value="453057666">453ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_enter_phone_number()</td>
+                <td>1</td>
+                <td class="duration" data-value="116983557">116ms</td>
+                <td class="duration" data-value="116983557">116ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_enter_zipp_code()</td>
+                <td>1</td>
+                <td class="duration" data-value="87989966">087ms</td>
+                <td class="duration" data-value="87989966">087ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">EditProfileTest.i_select_country_name_from_given_options()</td>
+                <td>1</td>
+                <td class="duration" data-value="70930701">070ms</td>
+                <td class="duration" data-value="70930701">070ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_click_continue_button()</td>
+                <td>6</td>
+                <td class="duration" data-value="2604451369">2s 604ms</td>
+                <td class="duration" data-value="434075228">434ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_click_on_economy_class_radio_button()</td>
+                <td>6</td>
+                <td class="duration" data-value="439181830">439ms</td>
+                <td class="duration" data-value="73196971">073ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_clik_type_button_as_a_option(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="481830873">481ms</td>
+                <td class="duration" data-value="80305145">080ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_select_arriving_as_aeraport_from_dropdown(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="911160580">911ms</td>
+                <td class="duration" data-value="151860096">151ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_select_arriving_date_as_from_dropdown(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="1827403781">1s 827ms</td>
+                <td class="duration" data-value="304567296">304ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_select_departure_date_as_from_dropdown(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="1827630515">1s 827ms</td>
+                <td class="duration" data-value="304605085">304ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_select_departure_from_dropdown_as_aeraport(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="946366933">946ms</td>
+                <td class="duration" data-value="157727822">157ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_select_from_Airline_dropdown(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="830956399">830ms</td>
+                <td class="duration" data-value="138492733">138ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FlightsTest.i_select_passenger_from_the_dropdown(String)</td>
+                <td>6</td>
+                <td class="duration" data-value="919966489">919ms</td>
+                <td class="duration" data-value="153327748">153ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hook.setupDriver()</td>
+                <td>15</td>
+                <td class="duration" data-value="52902711165">52s 902ms</td>
+                <td class="duration" data-value="3526847411">3s 526ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hook.tearDown(Scenario)</td>
+                <td>15</td>
+                <td class="duration" data-value="86654983875">1m 26s 654ms</td>
+                <td class="duration" data-value="5776998925">5s 776ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginTest.i_click_sign_in_button()</td>
+                <td>9</td>
+                <td class="duration" data-value="14008097851">14s 008ms</td>
+                <td class="duration" data-value="1556455316">1s 556ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginTest.i_ener_password()</td>
+                <td>9</td>
+                <td class="duration" data-value="854939656">854ms</td>
+                <td class="duration" data-value="94993295">094ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginTest.i_enter_user_name()</td>
+                <td>9</td>
+                <td class="duration" data-value="1089214250">1s 089ms</td>
+                <td class="duration" data-value="121023805">121ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginTest.i_go_to_webpage()</td>
+                <td>9</td>
+                <td class="duration" data-value="9487586643">9s 487ms</td>
+                <td class="duration" data-value="1054176293">1s 054ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">LoginTest.i_lunch_user_account()</td>
+                <td>7</td>
+                <td class="duration" data-value="11444893">011ms</td>
+                <td class="duration" data-value="1634984">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.click_on_register_link()</td>
+                <td>6</td>
+                <td class="duration" data-value="2920527851">2s 920ms</td>
+                <td class="duration" data-value="486754641">486ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.click_on_submit_button()</td>
+                <td>4</td>
+                <td class="duration" data-value="3862022676">3s 862ms</td>
+                <td class="duration" data-value="965505669">965ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.confirm_the_password_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="81885105">081ms</td>
+                <td class="duration" data-value="81885105">081ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_State_Province_name_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="139641325">139ms</td>
+                <td class="duration" data-value="139641325">139ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_city_name_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="132828761">132ms</td>
+                <td class="duration" data-value="132828761">132ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_email_address_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="168085187">168ms</td>
+                <td class="duration" data-value="168085187">168ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_first_name_to_the_given_text_filed()</td>
+                <td>1</td>
+                <td class="duration" data-value="94113868">094ms</td>
+                <td class="duration" data-value="94113868">094ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_last_name_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="95462981">095ms</td>
+                <td class="duration" data-value="95462981">095ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_mailing_address_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="370409145">370ms</td>
+                <td class="duration" data-value="370409145">370ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_password_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="86308334">086ms</td>
+                <td class="duration" data-value="86308334">086ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_phone_number_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="98165439">098ms</td>
+                <td class="duration" data-value="98165439">098ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_postal_code_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="97474662">097ms</td>
+                <td class="duration" data-value="97474662">097ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_to_the_given_text_field(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="280231544">280ms</td>
+                <td class="duration" data-value="93410514">093ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_user_name_to_the_given_text_field()</td>
+                <td>1</td>
+                <td class="duration" data-value="90689603">090ms</td>
+                <td class="duration" data-value="90689603">090ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.enter_your_to_the_given_text_field(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="314750645">314ms</td>
+                <td class="duration" data-value="104916881">104ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.navigate_to_New_Tour_homepage()</td>
+                <td>6</td>
+                <td class="duration" data-value="6194514547">6s 194ms</td>
+                <td class="duration" data-value="1032419091">1s 032ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.select_country_name_from_the_given_dropdown_option()</td>
+                <td>1</td>
+                <td class="duration" data-value="142630460">142ms</td>
+                <td class="duration" data-value="142630460">142ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">RegistrationTest.to_the_given_text_field(String)</td>
+                <td>3</td>
+                <td class="duration" data-value="300676991">300ms</td>
+                <td class="duration" data-value="100225663">100ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SelectFlightTest.i_click_on_button(String)</td>
+                <td>5</td>
+                <td class="duration" data-value="2947953358">2s 947ms</td>
+                <td class="duration" data-value="589590671">589ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SelectFlightTest.i_select_Blue_from_return_table(String)</td>
+                <td>5</td>
+                <td class="duration" data-value="387903892">387ms</td>
+                <td class="duration" data-value="77580778">077ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">SelectFlightTest.i_select_from_deoarture_table(String)</td>
+                <td>5</td>
+                <td class="duration" data-value="430918599">430ms</td>
+                <td class="duration" data-value="86183719">086ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot>
+            <tr>
+              <td>69</td>
+              <td>212</td>
+              <td class="duration">3m 24s 900ms</td>
+              <td class="duration">966ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
